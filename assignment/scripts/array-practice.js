@@ -99,16 +99,32 @@ console.log('The favorite foods are now' , favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+favoriteFoods[1]= 'candy';
+console.log('changed second favorite item to candy');
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+favoriteFoods.reverse();
+console.log( ' reverse the alphabetical arragngement of my favorite food items' , favoriteFoods);
+
+
+
+
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+let text = favoriteFoods.toString();
+console.log( 'changed favorite foods from array to a string' , favoriteFoods.toString( "and " ));
+
+// How do you add 'and' into the string??? None of the methods I used worked.
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
-//     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+//     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog'];
+let  animalsAndFood = animalArray.concat(favoriteFoods);
+console.log( 'comibined animalArray and FavoriteFoods into one array called animalsAndFood');
+
+

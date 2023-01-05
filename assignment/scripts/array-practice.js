@@ -9,10 +9,10 @@ console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
 let favoriteFoods = [ 'burgers' , 'french fries' , 'french toast' , ' key lime pie' , ' pineapple'];
-
+console.log( )
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
-console.log( 'My Favorite Foods' );
+console.log( 'My Favorite Foods are: ' , favoriteFoods );
 
 
 // 2. Array.length - tells you how many items are in the array
@@ -34,7 +34,7 @@ console.log('First animal is', animalArray[0])
 
 // 3.a. TODO: Log the second animal in the array 
 animalArray.indexOf('cat');
-console.log( "second animal is" , animalArray);
+console.log( "second animal is" , animalArray[1]);
 
 
 
@@ -45,7 +45,7 @@ console.log( ' Last animal is' , animalArray[3]);
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
 animalArray[animalArray.length-1];
-console.log( 'last animal is', animalArray);
+console.log(animalArray[animalArray.length-1]);
 
 
 
@@ -104,8 +104,10 @@ console.log('changed second favorite item to candy');
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+let FavoriteFoods = [];
+favoriteFoods.sort();
 favoriteFoods.reverse();
-console.log( ' reverse the alphabetical arragngement of my favorite food items' , favoriteFoods);
+console.log( ' reverse the alphabetical arrangment of my favorite food items' , favoriteFoods);
 
 
 
@@ -114,8 +116,8 @@ console.log( ' reverse the alphabetical arragngement of my favorite food items' 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-let text = favoriteFoods.toString();
-console.log( 'changed favorite foods from array to a string' , favoriteFoods.toString( "and " ));
+let text = favoriteFoods.join( " and " );
+console.log( favoriteFoods.join( " and " ));
 
 // How do you add 'and' into the string??? None of the methods I used worked.
 
@@ -125,6 +127,5 @@ console.log( 'changed favorite foods from array to a string' , favoriteFoods.toS
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog'];
 let  animalsAndFood = animalArray.concat(favoriteFoods);
-console.log( 'comibined animalArray and FavoriteFoods into one array called animalsAndFood');
-
+console.log(animalArray.concat(favoriteFoods));
 
